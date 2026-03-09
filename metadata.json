@@ -1,0 +1,5 @@
+{
+  "name": "LumenNotes AI",
+  "description": "Premium AI-powered study assistant that converts YouTube lectures into structured revision notes, flashcards, and provides an AI tutor.",
+  "requestFramePermissions": ["microphone"]
+}
