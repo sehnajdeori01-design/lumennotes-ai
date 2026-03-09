@@ -5,10 +5,10 @@ import App from './App'
 import './index.css'
 
 // Apni Clerk Publishable Key yahan check karo
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+const PUBLISHABLE_KEY = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) as string;
 
 if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
+  console.error("Missing Clerk Publishable Key");
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
