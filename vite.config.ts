@@ -17,8 +17,8 @@ export default defineConfig(({mode}) => {
       },
     },
     server: {
-     server: {
-  hmr: true, // Local par HMR hamesha on rakho
-  port: 3000,,
+      hmr: true, 
+      port: 3000,
+    },
   };
 });
