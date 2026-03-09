@@ -19,6 +19,6 @@ export default defineConfig(({mode}) => {
     server: {
       hmr: true, 
       port: 3000,
-    },
+    }
   };
 });
