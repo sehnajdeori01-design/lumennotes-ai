@@ -4,11 +4,10 @@ import { ClerkProvider } from '@clerk/clerk-react' // Iska dhyan rakho
 import App from './App'
 import './index.css'
 
-// Apni Clerk Publishable Key yahan check karo
 const PUBLISHABLE_KEY = (import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) as string;
 
 if (!PUBLISHABLE_KEY) {
-  console.error("Missing Clerk Publishable Key");
+  console.error("Clerk Key missing!");
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
